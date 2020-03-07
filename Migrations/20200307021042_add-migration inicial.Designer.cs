@@ -8,8 +8,8 @@ using Personas.DAL;
 namespace Personas.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200307010028_Inicial")]
-    partial class Inicial
+    [Migration("20200307021042_add-migration inicial")]
+    partial class addmigrationinicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

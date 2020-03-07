@@ -2,7 +2,7 @@
 
 namespace Personas.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class addmigrationinicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
