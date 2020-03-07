@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Personas.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,18 @@ namespace Personas
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            RegistroPersona rp = new RegistroPersona();
+            rp.Show();           
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            ConsultaPersona cp = new ConsultaPersona();
+            cp.Show();
         }
     }
 }

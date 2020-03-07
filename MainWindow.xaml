@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Personas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ventana Principal" Height="300" Width="448">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="259*"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Registrar Persona" Click="MenuItem_Click" FontWeight="Bold"/>
+            <MenuItem Header="Consultar Persona" Click="MenuItem_Click_1" FontWeight="Bold"/>
+        </Menu>
 
     </Grid>
 </Window>
