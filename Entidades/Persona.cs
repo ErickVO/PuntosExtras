@@ -9,7 +9,7 @@ namespace Personas.Entidades
         public int PersonaId { get; set; }
         public string Nombre { get; set; }
 
-        public Persona()
+        public Persona() 
         {
             PersonaId = 0;
             Nombre = string.Empty;
