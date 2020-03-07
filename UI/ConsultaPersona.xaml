@@ -1,0 +1,25 @@
+﻿<Window x:Class="Personas.UI.ConsultaPersona"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Personas.UI"
+        mc:Ignorable="d"
+        Title="ConsultaPersona" Height="300" Width="448">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="231*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Filtro" HorizontalAlignment="Left" Margin="5,-2,0,0" VerticalAlignment="Top" Height="26" Width="43" FontWeight="Bold"/>
+        <ComboBox x:Name="FiltroComboBox" HorizontalAlignment="Left" Margin="5,17,0,0" VerticalAlignment="Top" Width="142" Height="24">
+            <ComboBoxItem Content="Todo"/>
+            <ComboBoxItem Content="Id"/>
+            <ComboBoxItem Content="Nombre"/>
+        </ComboBox>
+        <Label Content="Criterio" HorizontalAlignment="Left" Margin="157,-3,0,0" VerticalAlignment="Top" Height="26" Width="60" FontWeight="Bold"/>
+        <TextBox x:Name="CriterioTextBox" HorizontalAlignment="Left" Margin="161,19,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="20"/>
+        <Button x:Name="btnConsultarr" Content="Consultar" HorizontalAlignment="Left" Margin="372,12,0,0" VerticalAlignment="Top" Height="36" Width="64" Click="btnConsultarr_Click"/>
+        <DataGrid x:Name="ConsultaDataGrid" Margin="4,5,4,12" Grid.Row="1"/>
+    </Grid>
+</Window>
