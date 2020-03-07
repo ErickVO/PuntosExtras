@@ -10,7 +10,11 @@
         <Label Content="Id:" HorizontalAlignment="Left" Margin="22,11,0,0" VerticalAlignment="Top"/>
         <Label Content="Nombre:" HorizontalAlignment="Left" Margin="22,66,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="121,14,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="121,67,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="121,67,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+            <TextBox.Text>
+                <Binding Path="Nombre" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay"></Binding>
+            </TextBox.Text>
+        </TextBox>
         <Button x:Name="btnNuevo" Content="Nuevo" HorizontalAlignment="Left" Margin="8,152,0,0" VerticalAlignment="Top" Height="47" Width="77" Click="btnNuevo_Click"/>
         <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="123,152,0,0" VerticalAlignment="Top" Height="47" Width="77" Click="btnGuardar_Click"/>
         <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="259,152,0,0" VerticalAlignment="Top" Height="47" Width="76" Click="btnEliminar_Click"/>
